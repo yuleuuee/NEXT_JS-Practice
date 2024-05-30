@@ -1,10 +1,11 @@
+import UseRouter from '@/components/UseRouter';
 import React from 'react'
 
 const ProfilePage = ({params}) => {
-    // console.log(params)
-
-
-
+    console.log(params)
+    console.log(params.user_name)
+    console.log(typeof(params.user_name))
+    
   // Function to capitalize the first letter of a string
   const capitalize = (str) => {
     return str.charAt(0).toUpperCase() + str.slice(1);
@@ -14,10 +15,13 @@ const ProfilePage = ({params}) => {
   const capitalizedUserName = capitalize(params.user_name);
 
   return (
-    <div>
-      Profile of {capitalizedUserName}
-      {/* {params.user_name} */}
-    </div>
+    <>
+      {/* link to go to the Admin page */}
+      <UseRouter></UseRouter>
+      <br />
+
+      Hello {capitalizedUserName}! This is your profile page.
+    </>
   )
 }
 
