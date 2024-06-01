@@ -9,7 +9,7 @@ const LearnDataFetch = async () => {
   console.log("DATA :",data);
   return (
     <>
-      <h1 className="font-bold">List of Users info. which are fetched form 'https://jsonplaceholder.typicode.com/users' :: </h1>
+      <h1 className="font-bold">List of Users info. which are Dirrectly fetched form 'https://jsonplaceholder.typicode.com/users' ::------- </h1>
 
       {
         data.map((user,i)=>(
