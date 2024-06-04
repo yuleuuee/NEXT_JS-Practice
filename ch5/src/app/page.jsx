@@ -11,12 +11,13 @@ export default function Home() {
       {/* <GetDataComponent></GetDataComponent> */}
       
       {/* getting and posting data using (api and fetch )in old way */}
-      {/* <PostDataComponent></PostDataComponent> */}
+      <PostDataComponent></PostDataComponent>
       {/* <GetDataComponent></GetDataComponent> */}
+      <GetDataNew></GetDataNew>
 
       {/* getting and posting data form just frontend (just like php) in easy way */}
       {/* <GetDataNew></GetDataNew> */}
-      <PostDataNew></PostDataNew>
+      {/* <PostDataNew></PostDataNew> */}
 
     </main>
   );
